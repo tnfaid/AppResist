@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AppResist</string>
+    <string name="action_settings">Settings</string>
+    <!--nilai array yang ada pada spinner1-4 -->
+    <string-array name="resistor_val">
+        <item>Hitam</item>
+        <item>Coklat</item>
+        <item>Merah</item>
+        <item>Orange</item>
+        <item>Kuning</item>
+        <item>Hijau</item>
+        <item>Biru</item>
+        <item>Ungu</item>
+        <item>Abu-Abu</item>
+        <item>Putih</item>
+        <item>Emas</item>
+        <item>Perak</item>
+        <item>Tak Berwarna</item>
+    </string-array>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gotapps.appresist.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!--label untuk hasil perhitungan-->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="Hasil Perhitungan"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:visibility="visible"
+            android:layout_alignEnd="@+id/camera_preview" />
+
+        <!--Cameraview dari library OpenCV-->
+        <org.opencv.android.JavaCameraView
+            android:id="@+id/camera_preview"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginStart="19dp" />
+
+        <!--Button untuk menghitung-->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Hitung"
+            android:layout_alignBottom="@+id/spinner6"
+            android:layout_alignStart="@+id/camera_preview" />
+
+        <!--Spinner untuk ring1-->
+        <Spinner
+            android:id="@+id/spinner5"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/camera_preview"
+            android:layout_marginEnd="13dp"
+            android:entries="@array/resistor_val" />
+
+        <!--Spinner untuk ring2-->
+        <Spinner
+            android:id="@+id/spinner6"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:entries="@array/resistor_val"
+            android:layout_below="@+id/textView5"
+            android:layout_alignStart="@+id/textView5" />
+
+        <!--Spinner untuk ring3-->
+        <Spinner
+            android:id="@+id/spinner7"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:entries="@array/resistor_val"
+            android:layout_below="@+id/textView4"
+            android:layout_alignStart="@+id/spinner8" />
+
+        <!--Spinner untuk ring4-->
+        <Spinner
+            android:id="@+id/spinner8"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:entries="@array/resistor_val" />
+
+        <!--label untuk ring1-->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/spinner5"
+            android:layout_alignStart="@+id/spinner5"
+            android:text="Gelang 1" />
+
+        <!--label untuk ring2-->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/spinner5"
+            android:layout_below="@+id/spinner5"
+            android:layout_marginTop="12dp"
+            android:text="Gelang 2" />
+
+        <!--label untuk ring3-->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/spinner7"
+            android:layout_below="@+id/spinner8"
+            android:layout_marginTop="12dp"
+            android:text="Gelang 3" />
+
+        <!--label untuk ring4-->
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gelang 4"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/spinner7"
+            android:layout_alignStart="@+id/spinner7" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
